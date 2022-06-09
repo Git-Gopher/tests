@@ -7,11 +7,17 @@ Obviously when branching you want to use the `--orphan` flag. Eg: `git branch --
 
 ## Syntax
 
-Some care should be taken to ensure consistent syntax when creating tests
+Some care should be taken to ensure consistent syntax when creating tests. The syntax is the following:
+
+| type   | syntax                                              |
+| ------ | --------------------------------------------------- |
+| branch | `test/<test-name>/<number-of-branch>`               |
+| pr     | `test/<test-name>/<number-of-branch>/<pr-title>`    |
+| issue  | `test/<test-name>/<number-of-branch>/<issue-title>` |
 
 ## Branches
 
-Test branches should be prefixed with `test/` along with a descriptive name. Eg: `test/two-parents-merged`
+Test branches should be prefixed with `test/` along with a descriptive name. Eg: `test/two-parents-merged/0`. Obviously some tests may span multiple branches so all tests should be labeled with a branch number . Eg: `test/two-parents-merged/0`. Attempt not to delete the branches after you have used them unless it's part of the test
 
 ### Commits
 
@@ -19,11 +25,11 @@ This may depend on the type of test that we are doing, however in order to aid r
 
 ### Issues
 
-A drawback of using a single repository for all of our tests is that they must share the same github issues/prs. In order to combat we need to be using a consistent syntax for labelling these. Suggested is when creating an issue use the name of the test in the title, followed by the the name of the test. Eg: `test/two-parents-merged/issue-title`. The body of the issue can be anything
+A drawback of using a single repository for all of our tests is that they must share the same github issues/prs. In order to combat we need to be using a consistent syntax for labelling these. Suggested is when creating an issue use the name of the test in the title, followed by the the name of the test. Eg: `test/two-parents-merged/0/issue-title`. The body of the issue can be anything
 
 ### Pull Requests
 
-Pull request should follow the same sort of format as the issue titles. Eg: `test/two-parents-merged/pr-title`
+Pull request should follow the same sort of format as the issue titles. Eg: `test/two-parents-merged/0/pr-title`
 
 ## Test List
 
