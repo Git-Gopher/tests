@@ -9,11 +9,15 @@ Obviously when branching you want to use the `--orphan` flag. Eg: `git branch --
 
 Some care should be taken to ensure consistent syntax when creating tests. The syntax is the following:
 
-| type   | syntax                                              |
-| ------ | --------------------------------------------------- |
-| branch | `test/<test-name>/<number-of-branch>`               |
-| pr     | `test/<test-name>/<number-of-branch>/<pr-title>`    |
-| issue  | `test/<test-name>/<number-of-branch>/<issue-title>` |
+| Type   | Syntax                                              | Example                                  |
+| ------ | --------------------------------------------------- | ---------------------------------------- |
+| Branch | `test/<test-name>/<number-of-branch>`               | `test/two-parents-merged/0`              |
+| PR     | `test/<test-name>/<number-of-branch>/<pr-title>`    | `test/two-parents-merged/0/pull-request` |
+| Issue  | `test/<test-name>/<number-of-branch>/<issue-title>` | `test/two-parents-merged/0/big-issue`    |
+
+## Files
+
+When creating commits and diffs, use the basic [hello world](https://gobyexample.com/hello-world) as the starting point and change how you see fit
 
 ## Branches
 
