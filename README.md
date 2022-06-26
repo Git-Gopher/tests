@@ -37,9 +37,10 @@ Pull request should follow the same sort of format as the issue titles. Eg: `tes
 
 ## Test List
 
-| test                           | description                         |
-| ------------------------------ | ----------------------------------- |
-| test/two-parents-merged        | check that a commit has two parents |
-| test/linked-pull-request-issue | a issue linked to a pull request    |
-| test/review-comments           | adding reviews to a pull request    |
-| test/stale-branch              | stale commits on branches           |
+| test                             | description                                                                 |
+| -------------------------------- | --------------------------------------------------------------------------- |
+| test/two-parents-merged          | check that a commit has two parents                                         |
+| test/linked-pull-request-issue   | a issue linked to a pull request                                            |
+| test/review-comments             | adding reviews to a pull request                                            |
+| test/stale-branch                | stale commits on branches                                                   |
+| test/commit-message-matches-diff | check that the commit message matches the changes contained within the diff |
