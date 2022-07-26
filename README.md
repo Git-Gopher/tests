@@ -45,3 +45,4 @@ Pull request should follow the same sort of format as the issue titles. Eg: `tes
 | test/stale-branch                | stale commits on branches                                                   |
 | test/commit-message-matches-diff | check that the commit message matches the changes contained within the diff |
 | test/committed-binary            | check that committed binaries on a git tree are detected                    |
+| test/empty-commit                | check that empty commits are detected                                       |
